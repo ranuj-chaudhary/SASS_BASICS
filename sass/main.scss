@@ -1,0 +1,38 @@
+.header {
+    &__heading{
+        background-color: green;
+        &--primary {
+            color: orange;
+        }
+
+        &--secondary{
+            color: blue;
+        }
+    }
+}
+
+
+.menu {
+ background-color: green;
+ list-style: none;
+ &__item {
+    font-size: 3rem;
+}
+ 
+ &__link {
+    font-size: 1rem;
+    color: white;
+    transition: all 600ms ease;
+
+    &--disabled{
+        background-color: gray;
+        padding: 8px 12px;
+        cursor: not-allowed;
+     }
+     &:hover{
+        background-color: yellow;
+        font-size: 1.5rem;
+        color: black;
+     }
+ }
+}
