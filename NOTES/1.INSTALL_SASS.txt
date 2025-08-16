@@ -1,0 +1,25 @@
+1) Install Node JS (so than modern web development tool NPM can be used)
+
+2) Initialise Directory: 
+
+npm init (this will create package.json file)
+
+3) Install sass as Dev dependency: 
+
+npm install sass --save-deps
+
+flag (--save-deps)
+
+4) Setup script to run
+
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  }
+
+sass/main.scss (input scss folder)
+css/style.css  (output css folder)
+
+run script:
+npm run compile:sass
+
+

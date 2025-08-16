@@ -1,0 +1,105 @@
+package.json (Helps share our project without sharing the whole project)
+
+A package.json file is a core part of a Node.js project, defining metadata about the project,
+ its dependencies, and scripts. Here's how you can create, use, and modify a package.json fil
+
+i) create package file with command
+npm init
+
+ii) create package file with defaults
+npm init -y
+
+DEPENDENCIES (Production Dependency)
+
+Purpose: These are the packages that your application needs to run in production.
+Installed in Production: These packages will be installed when you run npm install (or yarn install) without any additional flags, and they are included in the production build.
+Examples:
+Frameworks or libraries like react, express, or lodash.
+Packages required for the core functionality of your app.
+
+Remove a Dependency:
+npm uninstall <package-name>
+
+example:
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "An example Node.js application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "build": "webpack --config webpack.config.js",
+    "lint": "eslint ."
+  },
+  "keywords": ["example", "nodejs", "application"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "webpack": "^5.0.0"
+  }
+}
+
+
+3. Key Fields in package.json
+Field	                                            Description
+
+name	                            The name of the project (must be lowercase, URL-safe).
+version	                            The project version (uses semantic versioning, e.g., 1.0.0).
+description	                            A short description of your project.
+main	                            The entry point of your application (e.g., index.js).
+scripts	                            Custom commands for tasks (e.g., starting the app, running tests, etc.).
+dependencies	                            Packages required to run your app in production.
+devDependencies	                            Packages required only during development or testing.
+keywords	                            Array of keywords for easier discovery (e.g., in npm registry).
+author	                            The name of the project's author.
+license	                            The license under which the project is distributed.
+
+
+4. Run scripts
+
+"scripts": {
+  "start": "node index.js",
+  "test": "jest",
+  "lint": "eslint ."
+}
+
+
+npm run start    # Runs the 'start' script
+npm run test     # Runs the 'test' script
+npm run lint     # Runs the 'lint' script
+
+
+5. RUN THE app
+
+npm run start
+
+6. TEST THE APP
+
+npm run test
+
+
+
+
+
+
+
+
+
+
+devDependencies
+Purpose: These are the packages needed only during development, testing, or building your application. They are not required in production.
+
+Not Installed in Production: These packages will not be included when you run npm install --production (or set NODE_ENV=production).
+
+Examples:
+
+Build tools like webpack, vite, or babel.
+Testing frameworks like jest, mocha, or enzyme.
+Linters like eslint or stylelint.
