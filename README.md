@@ -1,13 +1,8 @@
-# SASS_BASICS
-CSS WITH SUPERPOWER
-Sass is a stylesheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized and makes it easy to share design within and across projects.
+# React + Vite
 
-If you’re looking for an introduction to Sass, check out the tutorial.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-If you want to look up a built-in Sass function, look no further than the built-in module reference.
+Currently, two official plugins are available:
 
-If you’re calling Sass from JavaScript, you may want the JS API documentation.
-
-Or the Dart API documentation if you’re calling it from Dart.
-
-Otherwise, use the table of contents for the language reference!
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
